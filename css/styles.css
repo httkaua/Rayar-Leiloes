@@ -1,0 +1,432 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e2e2;
+}
+
+.menu {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 500;
+    background-color: #d64333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 36px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 4vh;
+}
+
+#menuLogo {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+#titleWrite {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 2vw;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+#containerBidLeft {
+    width: 26vw;
+    margin-right: 5vw;
+}
+
+#containerBidRight {
+    width: 60vw;
+}
+
+.genericContBid {
+    background-color: #cacaca;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 1vw;
+}
+
+#containerBidAboveTable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 21vh;
+    margin-bottom: 8vh;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 0;
+}
+
+#returnNewBid {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.flexColumns {
+    display: flex;
+    flex-direction: column;
+}
+
+.spacing {
+    margin: 0;
+}
+
+#container_title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8vh;
+    height: 18vh;
+}
+
+#product_image {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#auction_info {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#auction_info th, #auction_info td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#auction_info th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#contStopwatch {
+    display: flex;
+    width: 22vw;
+    font-size: 30px;
+    font-weight: bold;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#contHighestBid {
+    display: flex;
+    width: 22vw;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerNewBid {
+    width: 22vw;
+    display: flex;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.genericTitles {
+    margin: 0;
+    font-weight: bold;
+}
+
+#bid_input {
+    padding: 5px;
+    font-size: 16px;
+    width: 14vw;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+}
+
+#bid_input:hover {
+    border-color: #ad2313;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#bid_input:focus {
+    border-color: #ad2313;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.bid_button {
+    background-color: #ad2313;
+    color: white;
+    height: 6vh;
+    width: 16vw;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.bid_button:hover {
+    background-color: #911d10;
+}
+
+#container_bids_table {
+    display: flex;
+    background-color: white;
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#bids_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bids_table th, #bids_table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    width: 25%;
+}
+
+#bids_table th {
+    background-color: #ad2313;
+    color: #f9f9f9;
+}
+
+#bids_table tr {
+    height: 30px;
+    max-height: 30px;
+}
+
+#bids_table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#bids_table tr:hover {
+    background-color: #f1f1f1;
+}
+
+#stopwatch_status {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-size: 16px;
+}
+
+#contTitleLabels {
+    justify-content: space-between;
+}
+
+#containerDetails {
+    border-collapse: collapse;
+    height: 46vh;
+}
+
+#containerDetails th {
+    background-color: #ad2313;
+    color: #f9f9f9;
+}
+
+#containerDetails tr {
+    background-color: #f9f9f9;
+}
+
+#containerDetails tr:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #d64333;
+    color: #fff;
+    height: 40vh;
+    margin-top: 10vh;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+#ul_footer li {
+    padding-bottom: 2vh;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+#contWinner {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 30vh;
+    background-color: #fff;
+    border: 4px solid #ad2313;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 502;
+    display: none;
+}
+
+#headWinner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ad2313;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+}
+
+#headWinnerTitle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 1vw;
+}
+
+#xButton {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+#xButton:hover {
+    background-color: #333;
+    border-radius: 2px;
+}
+
+#x_bar1, #x_bar2 {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    top: 50%;
+    left: 0;
+    transform-origin: center;
+    transition: 0.3s;
+}
+
+#x_bar1 {
+    transform: rotate(45deg);
+}
+
+#x_bar2 {
+    transform: rotate(-45deg);
+}
+
+#mainWinner {
+    position: relative;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 21vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#WindowWinnerNick, #WindowWinnerBid {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#mainWinner img {
+    width: 50px;
+    margin-top: 10px;
+}
+
+#winner_button {
+    background-color: #ad2313;
+    color: white;
+    height: 4vh;
+    width: 10vw;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#winner_button:hover {
+    background-color: #911d10;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 501;
+  }
+

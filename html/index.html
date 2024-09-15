@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leilão</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../css/fav_ico_martelo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div id="menuLogo">
+                <a href="index.html"><img src="../css/martelo.png" alt="Logo" class="logo"></a>
+                <h1 id="titleWrite">Rayar Leilões</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--Fundo escurecido e mensagem de vencedor (ocultas até o fim do leilão)-->
+        <div id="overlay" class="overlay"></div> 
+        <div id="contWinner">
+            <div id="headWinner">
+                <label id="headWinnerTitle">Fim do leilão</label>
+                <div id="xButton">
+                    <div id="x_bar1"></div>
+                    <div id="x_bar2"></div>
+                </div>
+            </div>
+            <div id="mainWinner">
+                <label id="WindowWinnerNick">Lorem Ipsum</label>
+                <label id="WindowWinnerBid">Lorem Ipsum</label>
+                <img src="../css/martelo_vermelho.png" alt="Logo">
+                <input type="button" id="winner_button" value="OK">
+            </div>
+        </div>
+        
+        <div id="containerBidLeft">
+            <div id="container_title" class="genericContBid">
+                <img src="../css/chuteira_risco.jpg" alt="Produto" id="product_image">
+                <div class="flexColumns" id="contTitleLabels">
+                    <h2 class="spacing">Chuteira do Risco</h2>
+                    <label>Valor inicial: </label>
+                    <label id="initialBidValue">R$ 800,00</label>
+                    <span id="stopwatch_status">Lorem Ipsum</span>
+                </div>
+            </div>
+
+            <div id="containerDetails" class="genericContBid">
+                <label class="genericTitles">Detalhes</label>
+                <table id="auction_info">
+                    <tr>
+                        <th>Anunciante</th>
+                        <td>Liga de Futebol Mundial</td>
+                    </tr>
+                    <tr>
+                        <th>Categoria</th>
+                        <td>Esportes</td>
+                    </tr>
+                    <tr>
+                        <th>Descrição</th>
+                        <td>Usada em jogos oficiais por Risco, o camisa 10 do Angatú F.C.</td>
+                    </tr>
+                    <tr>
+                        <th>Estado</th>
+                        <td>Usada</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="containerBidRight">
+            <div id="containerBidAboveTable">
+                <div class="vertical">
+                    <div class="genericContBid" id="contStopwatch">
+                        <label id="stopwatch_hours">88</label>
+                        <label>:</label>
+                        <label id="stopwatch_minutes">88</label>
+                        <label>:</label>
+                        <label id="stopwatch_seconds">88</label>
+                    </div>
+
+                    <div class="genericContBid" id="contHighestBid">
+                        <label>Maior lance: R$ 800,00</label>
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <div id="containerNewBid" class="genericContBid">
+                        <h3 class="genericTitles">Lançar:</h3>
+                        <form action="#" method="POST">
+                            <input type="number" id="bid_input" placeholder="R$ 810,00" required>
+                        </form>
+                    </div>
+                    <label id="returnNewBid"></label>
+                    <div id="containerBidAmount">
+                        <button type="button" id="bid_amount" class="bid_button">Dar Lance</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container_bids_table">
+                <table id="bids_table">
+                    <thead>
+                        <tr>
+                            <th>Arrematante</th>
+                            <th>Valor de Arremate</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <ul id="ul_footer">
+                <li class="footer_li"><label>Rayar Leilões, 2024</label></li>
+                <li class="footer_li"><label>Criador: Kauã Hamilton</label></li>
+                <li class="footer_li"><a href="https://github.com/httkaua" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li class="footer_li"><a href="https://www.instagram.com/dkusco?igsh=aTZoY2E1dGhhOGE5" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../javascript/script.js" defer></script>
+</body>
+</html>
