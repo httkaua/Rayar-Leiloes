@@ -19,7 +19,7 @@ let top_10_bids = [
     }
 ]; // lance padrão para não deixar a array vazia
 
-const DaySet = 0.0001; // Tempo do cronômetro em dias
+const DaySet = 0.0007; // Tempo do cronômetro em dias
 
 // Momento do fim do leilão
 const TimeFromNow = new Date().getTime() + (DaySet * 24 * 3600 * 1000);
